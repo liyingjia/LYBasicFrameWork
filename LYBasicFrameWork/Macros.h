@@ -99,4 +99,12 @@
 #define WeakSelf(type)  __weak typeof(type) weak##type = type;
 #define StrongSelf(type)  __strong typeof(type) type = weak##type;
 
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#define debugMethod() NSLog(@"%s", __func__)
+#else
+#define NSLog(...)
+#define debugMethod()
+#endif
+
 #endif /* Macros_h */
