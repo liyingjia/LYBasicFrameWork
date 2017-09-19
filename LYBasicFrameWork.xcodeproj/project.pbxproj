@@ -99,6 +99,7 @@
 		B253147B1F5963F70011BD02 /* MMPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25314731F5963F70011BD02 /* MMPopupView.m */; };
 		B253147C1F5963F70011BD02 /* MMPopupWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B25314751F5963F70011BD02 /* MMPopupWindow.m */; };
 		B253147D1F5963F70011BD02 /* MMSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = B25314771F5963F70011BD02 /* MMSheetView.m */; };
+		B2596C281F6F738800F9DF95 /* CHD_ListView_Structure.m in Sources */ = {isa = PBXBuildFile; fileRef = B2596C271F6F738800F9DF95 /* CHD_ListView_Structure.m */; };
 		B2D4E5401F57F0D400E73D74 /* JXPopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D4E53B1F57F0D400E73D74 /* JXPopoverAction.m */; };
 		B2D4E5411F57F0D400E73D74 /* JXPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D4E53D1F57F0D400E73D74 /* JXPopoverView.m */; };
 		B2D4E5421F57F0D400E73D74 /* JXPopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D4E53F1F57F0D400E73D74 /* JXPopoverViewCell.m */; };
@@ -316,6 +317,8 @@
 		B25314751F5963F70011BD02 /* MMPopupWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPopupWindow.m; sourceTree = "<group>"; };
 		B25314761F5963F70011BD02 /* MMSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSheetView.h; sourceTree = "<group>"; };
 		B25314771F5963F70011BD02 /* MMSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSheetView.m; sourceTree = "<group>"; };
+		B2596C261F6F738800F9DF95 /* CHD_ListView_Structure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHD_ListView_Structure.h; sourceTree = "<group>"; };
+		B2596C271F6F738800F9DF95 /* CHD_ListView_Structure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHD_ListView_Structure.m; sourceTree = "<group>"; };
 		B2D4E5371F57E9BA00E73D74 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B2D4E5381F57EF4C00E73D74 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		B2D4E53A1F57F0D400E73D74 /* JXPopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPopoverAction.h; sourceTree = "<group>"; };
@@ -405,6 +408,7 @@
 		B2404E4E1F57A84E004949F5 /* LYBasicFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				B2596C251F6F737500F9DF95 /* Tools */,
 				B2404F1C1F57E788004949F5 /* Category */,
 				B2404F661F57E788004949F5 /* NetWorkRequest */,
 				B2404EBC1F57AFB4004949F5 /* Modeles */,
@@ -912,6 +916,15 @@
 			path = MMPopupView;
 			sourceTree = "<group>";
 		};
+		B2596C251F6F737500F9DF95 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B2596C261F6F738800F9DF95 /* CHD_ListView_Structure.h */,
+				B2596C271F6F738800F9DF95 /* CHD_ListView_Structure.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		B2D4E5391F57F0D400E73D74 /* JXPopoverView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1158,6 +1171,7 @@
 				B253147B1F5963F70011BD02 /* MMPopupView.m in Sources */,
 				B2D4E54C1F581AE400E73D74 /* HomeWebViewController.m in Sources */,
 				B2404F8B1F57E788004949F5 /* UIView+Animation.m in Sources */,
+				B2596C281F6F738800F9DF95 /* CHD_ListView_Structure.m in Sources */,
 				B2404F761F57E788004949F5 /* NSString+Category.m in Sources */,
 				B2404EF51F57C10C004949F5 /* UIViewController+WyhShowEmpty.m in Sources */,
 				B2404F0C1F57D95B004949F5 /* CCBaseTableHeaderView.m in Sources */,
