@@ -8,10 +8,7 @@
 //  基本原理就是为每一个控制器添加自定义导航条，做到导航条与控制器相连的效果
 
 #import <UIKit/UIKit.h>
-
-#import "UINavigationController+GKCategory.h"
-#import "UIViewController+GKCategory.h"
-#import "UIScrollView+GKCategory.h"
+#import "GKCategory.h"
 
 #import "GKNavigationBarConfigure.h"
 
@@ -32,6 +29,10 @@
 /** 设置导航栏背景，[UIColor clearColor]可设置为透明 */
 @property (nonatomic, strong) UIColor *gk_navBackgroundColor;
 @property (nonatomic, strong) UIImage *gk_navBackgroundImage;
+/** 设置导航栏分割线颜色或图片 */
+@property (nonatomic, strong) UIColor *gk_navShadowColor;
+@property (nonatomic, strong) UIImage *gk_navShadowImage;
+
 @property (nonatomic, strong) UIColor *gk_navTintColor;
 @property (nonatomic, strong) UIView *gk_navTitleView;
 @property (nonatomic, strong) UIColor *gk_navTitleColor;
@@ -42,5 +43,15 @@
 
 @property (nonatomic, strong) UIBarButtonItem *gk_navRightBarButtonItem;
 @property (nonatomic, strong) NSArray<UIBarButtonItem *> *gk_navRightBarButtonItems;
+
+
+/**
+ 显示导航栏分割线
+ */
+- (void)showNavLine;
+/**
+ 隐藏导航栏分割线
+ */
+- (void)hideNavLine;
 
 @end

@@ -16,7 +16,7 @@
 
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer {
     
-    // 忽略跟控制器
+    // 忽略根控制器
     if (self.navigationController.viewControllers.count <= 1) {
         return NO;
     }
@@ -39,6 +39,13 @@
             return NO;
         }
     }else {
+        
+        // 全屏滑动时起作用
+        if (!topVC.gk_fullScreenPopDisabled) {
+            // 上下滑动
+            if (transition.x == 0) return NO;
+        }
+        
         // 忽略超出手势区域
         CGPoint beginningLocation = [gestureRecognizer locationInView:gestureRecognizer.view];
         CGFloat maxAllowDistance  = topVC.gk_popMaxAllowedDistanceToLeftEdge;
